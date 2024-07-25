@@ -105,7 +105,8 @@ task('provision:update', function () {
     run("curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' > /etc/apt/sources.list.d/caddy-stable.list");
 
     // Nodejs
-    run("curl -fsSL https://deb.nodesource.com/{{nodejs_version}}' | sudo -E bash -&&\ ");
+    run("curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh");
+    run("sudo -E bash nodesource_setup.sh");
 
     // Update
     run('apt-get update', ['env' => ['DEBIAN_FRONTEND' => 'noninteractive']]);
