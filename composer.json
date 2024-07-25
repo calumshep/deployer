@@ -1,21 +1,17 @@
 {
-    "name": "calumshep/deployer",
-    "description": "Deployment Tool (fixed nodejs provisioning for Ubuntu 24.04)",
+    "name": "deployer/deployer",
+    "description": "Deployment Tool",
     "license": "MIT",
     "homepage": "https://deployer.org",
     "support": {
         "docs": "https://deployer.org/docs",
-        "source": "https://github.com/calumshep/deployer",
-        "issues": "https://github.com/calumshep/deployer/issues"
+        "source": "https://github.com/deployphp/deployer",
+        "issues": "https://github.com/deployphp/deployer/issues"
     },
     "authors": [
         {
             "name": "Anton Medvedev",
             "email": "anton@medv.io"
-        },
-        {
-            "name": "Calum Shepherd",
-            "email": "calum.shep@icloud.com"
         }
     ],
     "funding": [
@@ -45,7 +41,7 @@
         "bin/dep"
     ],
     "require": {
-        "php": "^8.3",
+        "php": "^8.0|^7.3",
         "ext-json": "*",
         "justinrainbow/json-schema": "^5.2",
         "psr/http-message": "^1",
