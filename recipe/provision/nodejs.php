@@ -2,7 +2,7 @@
 namespace Deployer;
 
 // Node.js version from https://github.com/nodesource/distributions.
-set('nodejs_version', 'node_22.x');
+set('nodejs_version', 'setup_22.x');
 
 desc('Installs npm packages');
 task('provision:npm', function () {
